@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#B22222</color>
+
+    <color name="blue_fb">#1c6cc3</color>
+    <color name="blue_telegram">#00b9f2</color>
+
+    <color name="darkTech">#22596B</color>
+    <color name="bg">#282828</color>
+    <color name="black">#000</color>
+    <color name="yellow">#ff9933</color>
+    <color name="login_line">#FF0000</color>
+    <color name="view_all_color">#cd2d6f</color>
+
+    <color name="btn_primary">#FF0000</color>
+    <color name="btn_secondary">#DC143C</color>
+
+    <color name="gray">#ccc</color>
+
+    <color name="white">#fff</color>
+    <color name="azul">#347990</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparentBlack">#B4000000</color>
+    <color name="transparentWhite">#B4FFFFFF</color>
+    <color name="transparentRed">#B4FF0000</color>
+</resources>

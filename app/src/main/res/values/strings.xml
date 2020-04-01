@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">CinemaVip</string>
+    <string name="email_login">Email</string>
+    <string name="password_login">Password</string>
+    <string name="remember_me">Recordar</string>
+    <string name="login">Iniciar</string>
+    <string name="register">Crear cuenta</string>
+    <string name="forgot_password">Recuperar contraseña</string>
+    <string name="name_login">Nombre</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="phone_login">Telefono</string>
+    <string name="already_account">Ya tiene cuenta?</string>
+    <string name="iniciar_con_google">Iniciar con Google</string>
+
+    <string name="important">Importante</string>
+    <string name="download_msg">%s no está instalado. Haga clic en el botón de abajo para descargarlo</string>
+    <string name="download">Download</string>
+    <string name="xmtv_player">Web Video Caster</string>
+    <string name="xmtv_download_link">http://download.xmtvplayer.com:8080/apk/xmtvplayer2018.apk</string>
+
+    <string name="appId">ca-app-pub-3940256099942544~3347511713</string>
+    <!--string name="bannerAdsId">ca-app-pub-9296319676229112/2599943800</string-->
+    <string name="bannerAdsId">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="intersticialAdsId">ca-app-pub-9296319676229112/7824350322</string>
+    <string name="rewardedAdsId">ca-app-pub-9296319676229112/5198186986</string>
+
+    <string name="PoliticaPrivacidad">En Cinedark Play no nos hacemos responsables del uso indebido que puedas hacer del contenido de nuestra aplicación.
+    En ningún caso o circunstancia se podrá responsabilizar al propietario ni a los colaboradores del ilícito uso de la información contenida en CineDark Play.
+    Así mismo tampoco se nos podrá responsabilizar del incorrecto uso o mala interpretación que se haga de la información y servicios incluidos.
+    Igualmente quedará fuera de nuestra responsabilidad el material al que usted pueda acceder desde enlaces de terceros. Toda la información y programas
+    aquí recogidos van destinados al efectivo cumplimiento de los derechos recogidos en el articulo 31 RD/1/1996 por el que se aprueba el texto refundido en la
+    Ley de la propiedad intelectual (LPI) en especial en referencia al articulo 31.2 LPI y en concordancia con lo expresado en el articulo 100.2 de esta misma ley.
+    Nos reservamos el derecho de vetar la entrada a cualquier sujeto a nuestra app y a su vez se reserva cualquier derecho de prohibir el uso de cualquier programa y/o información,
+    en corcondancia con los derechos de autor otorgados por el artículo 14 LPI. La visita o acceso a esta aplicación, exige la aceptación del presente aviso. En esta app
+    se podrá acceder a contenidos publicados por Vidoza.net, YouTube, Video.Google.com
+    Veoh, vk, Videos4You, PowVideo, Played.to, entre otros varios. El único material que existe en la aplicación son enlaces a dicho contenido, facilitamos unicamente su visionado.
+    Los propietarios de los antes mencionados son plenamente responsables de los contenidos que publiquen. Por consiguiente, CineDark Play no aprueba, ni hace suyos los productos,
+        servicios, contenidos, información, datos, opiniones, archivos y cualquier clase de material existente en los sitios antes mencionados, así mismo no controla ni se hace responsable de la calidad,
+     licitud, fiabilidad y utilidad de la información contenidos y servicios existentes en cualquier sitio externo.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/8135179316</string>
+
+    <string name="RGPD_Policy">Por la presente, doy consentimiento para que CinedDark Play! procese mis datos personales para personalizar y mejorar mi experiencia de uso en la app, así como,
+    publicar anuncios especificos a través de redes publicitarias y sus socios, en función de mis preferencias personales. Al aceptar la presente, declaro que he leido y aceptado la Politica de Privacidad y acepto
+    que mi edad es mayor a 18 años. Entendiendo que puedo retirar mi consentimiento en cualquier momento en los ajustes de la app</string>
+</resources>

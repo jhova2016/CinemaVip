@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "137805384173",
+    "firebase_url": "https://cinemavip-eaacb.firebaseio.com",
+    "project_id": "cinemavip-eaacb",
+    "storage_bucket": "cinemavip-eaacb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137805384173:android:5b9cbf18ed1ab0463dbfe4",
+        "android_client_info": {
+          "package_name": "com.example.cinemavip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137805384173-52q7gjhjsmgv37ao6qh30jh250hm0agr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinemavip",
+            "certificate_hash": "e645e620348769371c32a3f424e7df36b22254c8"
+          }
+        },
+        {
+          "client_id": "137805384173-dlv0uu33bg3f3hmpo6vm0qmov3crmeso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpD3z2gYTxdFQ8sILmSX5onWARQmYP1Ng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137805384173-dlv0uu33bg3f3hmpo6vm0qmov3crmeso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

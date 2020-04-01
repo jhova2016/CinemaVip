@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cinemavip">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        >
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9296319676229112~9029620789" />
+
+        <activity android:name=".UI.Player.ExoplayerActivity" />
+        <activity android:name=".UI.SeeAllActivity" />
+        <activity android:name=".UI.Account.AccountActivity" />
+        <activity android:name=".UI.Player.ChoosePlayerActivity" />
+        <activity android:name=".UI.Player.PlayerActivity" />
+        <activity android:name=".UI.Details.SerieDetailsActivity" />
+        <activity android:name=".UI.Details.MovieDetailsActivity" />
+        <activity android:name=".UI.Account.SignUpActivity" />
+        <activity android:name=".UI.Account.SignInActivity" />
+        <activity android:name=".UI.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.MainActivity" />
+    </application>
+
+</manifest>
