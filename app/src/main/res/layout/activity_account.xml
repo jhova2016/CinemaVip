@@ -118,14 +118,7 @@
                         android:background="@drawable/btn_rounded_primary"
                         android:textColor="@color/white"
                         android:padding="8dp"/>
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/premiun"
-                        android:text="modo premiun"
-                        android:background="@drawable/btn_rounded_primary"
-                        android:textColor="@color/white"
-                        android:padding="8dp"/>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

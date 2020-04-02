@@ -118,7 +118,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     private void updateUI(FirebaseUser user) {
         if (user != null ){
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), SerialActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
             FirebaseFirestore db = FirebaseFirestore.getInstance();

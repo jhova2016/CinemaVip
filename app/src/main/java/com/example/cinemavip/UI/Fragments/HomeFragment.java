@@ -80,7 +80,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<Integer> favSeriesIds = new ArrayList<>();
 
     RelativeLayout rlMovFav, rlSerFav;
-    private AdView mAdView0, mAdView1, mAdView2;
+
 
     private AlertDialog RGPDAlert;
 
@@ -175,17 +175,13 @@ public class HomeFragment extends Fragment {
         toolbar = view.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
 
-        mAdView0 = view.findViewById(R.id.adView0);
-        mAdView1 = view.findViewById(R.id.adView1);
-        mAdView2 = view.findViewById(R.id.adView2);
+
 
         AdRequest adRequest0 = new AdRequest.Builder()
                 .addTestDevice("19710009EFF315F6A8E81BC719DBA6E0")
                 .build();
 
-        mAdView0.loadAd(adRequest0);
-        mAdView1.loadAd(adRequest0);
-        mAdView2.loadAd(adRequest0);
+
 
         rlMovFav = view.findViewById(R.id.rlPeliFav);
         rlSerFav = view.findViewById(R.id.rlSeriesFav);
@@ -314,7 +310,7 @@ public class HomeFragment extends Fragment {
         if (favMoviesIds.size() > 0){
             rlMovFav.setVisibility(View.VISIBLE);
             rvPeliculasFav.setVisibility(View.VISIBLE);
-            mAdView0.setVisibility(View.VISIBLE);
+
             PF.clear();
             for (Integer favId : favMoviesIds) {
                 moviesRepository.getMovie(favId, new onGetMovieCallback() {
@@ -334,7 +330,7 @@ public class HomeFragment extends Fragment {
         }else {
             rlMovFav.setVisibility(View.GONE);
             rvPeliculasFav.setVisibility(View.GONE);
-            mAdView0.setVisibility(View.GONE);
+
         }
     }
 
@@ -347,7 +343,7 @@ public class HomeFragment extends Fragment {
         if (favSeriesIds.size() > 0){
             rlSerFav.setVisibility(View.VISIBLE);
             rvSeriesFav.setVisibility(View.VISIBLE);
-            mAdView0.setVisibility(View.VISIBLE);
+
             SF.clear();
             for (Integer favId : favSeriesIds) {
                 seriesRepository.getSerie(favId, new onGetSerieCallback() {
@@ -367,7 +363,7 @@ public class HomeFragment extends Fragment {
         }else {
             rlSerFav.setVisibility(View.GONE);
             rvSeriesFav.setVisibility(View.GONE);
-            mAdView0.setVisibility(View.GONE);
+
         }
     }
 

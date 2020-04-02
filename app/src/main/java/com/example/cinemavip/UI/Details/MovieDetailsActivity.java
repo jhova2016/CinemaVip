@@ -67,7 +67,6 @@ public class MovieDetailsActivity extends AppCompatActivity {
     private Button trailer;
     private SharedPreferences favMovies;
     private SharedPreferences.Editor editor;
-    private AdView mAdView0, mAdView1;
     private InterstitialAd mInterstitialAd;
 
     private Intent chooseServer;
@@ -106,12 +105,9 @@ public class MovieDetailsActivity extends AppCompatActivity {
         rvRelated = findViewById(R.id.rvRelacionadas);
         trailer = findViewById(R.id.btnTrailer);
 
-        mAdView0 = findViewById(R.id.adView0);
-        mAdView1 = findViewById(R.id.adView1);
+
 
         AdRequest adRequest = new AdRequest.Builder().addTestDevice("19710009EFF315F6A8E81BC719DBA6E0").build();
-        mAdView0.loadAd(adRequest);
-        mAdView1.loadAd(adRequest);
 
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getResources().getString(R.string.intersticialAdsId));

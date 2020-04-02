@@ -10,6 +10,7 @@ import android.webkit.WebView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.cinemavip.R;
+import com.example.cinemavip.UI.Account.SerialActivity;
 import com.example.cinemavip.UI.Account.SignInActivity;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
@@ -111,7 +112,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void go2NextActivity(){
         if (user != null) {
-            nextActivity = new Intent(getApplicationContext(), MainActivity.class);
+            nextActivity = new Intent(getApplicationContext(), SerialActivity.class);
             nextActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         }else{
             nextActivity = new Intent(getApplicationContext(), SignInActivity.class);

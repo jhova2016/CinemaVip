@@ -46,15 +46,7 @@
                 android:layout_height="480dp"
                 android:id="@+id/slidePager"/>
         </RelativeLayout>
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:visibility="gone"
-            android:id="@+id/adView0"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/bannerAdsId">
-        </com.google.android.gms.ads.AdView>
+
         <RelativeLayout
             android:id="@+id/rlPeliFav"
             android:layout_width="match_parent"
@@ -135,14 +127,7 @@
             android:layout_height="200dp"
             android:orientation="horizontal"
             android:visibility="gone"/>
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/bannerAdsId">
-        </com.google.android.gms.ads.AdView>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -219,14 +204,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:orientation="horizontal"/>
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/bannerAdsId">
-        </com.google.android.gms.ads.AdView>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

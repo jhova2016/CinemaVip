@@ -44,7 +44,7 @@ import java.util.TimeZone;
 public class AccountActivity extends AppCompatActivity {
     private TextView nombre, email;
     private ImageView foto, settingsImg;
-    private Button logOut, teleG, FaceB,premiun;
+    private Button logOut, teleG, FaceB;
     private Toolbar toolbar;
     private static String FACEBOOK_URL = "https://www.facebook.com/CineDarkPlayOficial";
     private static String FACEBOOK_PAGE_ID = "CineDarkV2Oficial";
@@ -70,7 +70,7 @@ public class AccountActivity extends AppCompatActivity {
         teleG = findViewById(R.id.comunityTelegram);
         FaceB = findViewById(R.id.comunityFb);
         settingsImg = findViewById(R.id.config_button);
-        premiun = findViewById(R.id.premiun);
+
 
 
         settingsImg.setOnClickListener(new View.OnClickListener() {
@@ -80,13 +80,6 @@ public class AccountActivity extends AppCompatActivity {
             }
         });
 
-        premiun.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFiltro();
-                DialogFiltros.show();
-            }
-        });
 
 
         teleG.setOnClickListener(new View.OnClickListener() {
@@ -217,130 +210,7 @@ public class AccountActivity extends AppCompatActivity {
 
     boolean encontro=false;
     String clavesusada;
-    String fecha(int n)
-    {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(new Date());
-        int calendarTime = Calendar.DAY_OF_MONTH;
-        int temp = calendar.get(calendarTime);
-        calendar.set(calendarTime, temp+n);
-        SimpleDateFormat formatoFecha = new SimpleDateFormat();
-        formatoFecha.setTimeZone(TimeZone.getTimeZone("GMT-6"));
-        Date fechaSum = calendar.getTime();
-        formatoFecha.applyPattern("dd/MM/yyyy");
-        String fechaRespuesta = formatoFecha.format(fechaSum);
-        return fechaRespuesta;
-
-    }
-    private void DialogFiltro()
-    {
 
 
-        android.app.AlertDialog.Builder builder=new android.app.AlertDialog.Builder(this);
-        View view =View.inflate(this,R.layout.dialog,null);
-        final EditText clave=view.findViewById(R.id.codigo);
-        Button  cancelar=view.findViewById(R.id.cancelar);
-
-        Button  aceptar=view.findViewById(R.id.descargar);
-
-        //builder.setCancelable(false);
-        builder.setView(view);
-        DialogFiltros=builder.create();
-
-        aceptar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                encontro=false;
-                FirebaseFirestore db = FirebaseFirestore.getInstance();
-                db.collection("claves")
-                        .get()
-                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                                if (task.isSuccessful()) {
-                                    for (QueryDocumentSnapshot document : task.getResult()) {
-
-
-                                        if(clave.getText().toString().equals(document.getId().toString()))
-                                        {
-                                            encontro=true;
-                                            clavesusada=document.getId();
-
-                                        }
-                                    }
-                                    if(encontro==true)
-                                    {
-
-                                         FirebaseUser user;
-                                        FirebaseAuth mAuth;
-                                        user = FirebaseAuth.getInstance().getCurrentUser();
-
-                                        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-                                        Map<String, Object> datos = new HashMap<>();
-                                        datos.put("Usuario", user.getUid());
-                                        datos.put("Premiun", true);
-                                        datos.put("ClaveUsada", clavesusada);
-                                        datos.put("InicioPremiun", fecha(0));
-                                        datos.put("FinalPremiun", fecha(7));
-
-
-                                        db.collection("usuarios").document( user.getUid())
-                                                .set(datos)
-                                                .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                    @Override
-                                                    public void onSuccess(Void aVoid) {
-                                                        // Log.d(TAG, "DocumentSnapshot successfully written!");
-                                                    }
-                                                })
-                                                .addOnFailureListener(new OnFailureListener() {
-                                                    @Override
-                                                    public void onFailure(@NonNull Exception e) {
-                                                        //Log.w(TAG, "Error writing document", e);
-                                                    }
-                                                });
-
-                                        db.collection("claves").document(clavesusada)
-                                                .delete() .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                            @Override
-                                            public void onSuccess(Void aVoid) {
-                                               // Log.d(TAG, "DocumentSnapshot successfully deleted!");
-                                            }
-                                        })
-                                                .addOnFailureListener(new OnFailureListener() {
-                                                    @Override
-                                                    public void onFailure(@NonNull Exception e) {
-                                                      //  Log.w(TAG, "Error deleting document", e);
-                                                    }
-                                                });
-
-                                        DialogFiltros.dismiss();
-
-                                    }
-                                    else
-                                    {
-                                        Toast toast1 = Toast.makeText(getApplicationContext(), "Clave incorrecta", Toast.LENGTH_SHORT);toast1.show();
-                                    }
-                                } else {
-                                    //Log.w(TAG, "Error getting documents.", task.getException());
-                                }
-                            }
-                        });
-
-
-
-            }
-        });
-
-        cancelar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DialogFiltros.dismiss();
-
-            }
-        });
-
-    }
 
 }

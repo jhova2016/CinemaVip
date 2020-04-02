@@ -132,8 +132,7 @@ public class SerieDetailsActivity extends AppCompatActivity {
             }
         });
 
-        mAdView0 = findViewById(R.id.adView0);
-        mAdView1 = findViewById(R.id.adView1);
+
 
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView0.loadAd(adRequest);

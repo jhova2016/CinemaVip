@@ -107,7 +107,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private void updateUI(final FirebaseUser currentUser){
        if (currentUser != null ){
-           Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+           Intent intent = new Intent(getApplicationContext(),SerialActivity.class);
            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
            startActivity(intent);
            finish();

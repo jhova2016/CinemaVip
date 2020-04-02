@@ -49,7 +49,7 @@ public class SearchFragment extends Fragment {
 
     private LinearLayout llMovies, llSeries;
 
-    private AdView mAdView0, mAdView1;
+
 
     private androidx.appcompat.widget.SearchView searchView;
 
@@ -98,13 +98,12 @@ public class SearchFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
-        mAdView0 = view.findViewById(R.id.adView0);
-        mAdView1 = view.findViewById(R.id.adView1);
+
 
         AdRequest adRequest0 = new AdRequest.Builder().build();
-        mAdView0.loadAd(adRequest0);
+
         AdRequest adRequest1 = new AdRequest.Builder().build();
-        mAdView1.loadAd(adRequest1);
+
 
         llMovies = view.findViewById(R.id.llMoviesContainer);
         llSeries = view.findViewById(R.id.llSeriesContainer);

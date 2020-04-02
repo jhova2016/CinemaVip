@@ -27,6 +27,7 @@
         <activity android:name=".UI.Details.MovieDetailsActivity" />
         <activity android:name=".UI.Account.SignUpActivity" />
         <activity android:name=".UI.Account.SignInActivity" />
+        <activity android:name=".UI.Account.SerialActivity"/>
         <activity android:name=".UI.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
